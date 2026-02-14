@@ -1,0 +1,216 @@
+:root {
+   --header-color: white;
+   --font-color: #ff0521;
+   --bg-color: #ff99bd;
+}
+
+body {
+   color: var(--font-color);
+   background-color: var(--bg-color);
+   font-family: Arial, sans-serif;
+}
+
+.centre-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+      
+h1 {
+   color: var(--header-color);
+   font-size: 3rem;
+   font-style: italic;
+   font-variant: small-caps;
+   text-align: center;
+ }
+      
+h2 {
+   color: var(--header-color);
+   font-size: 2.5rem;
+   font-variant: small-caps;
+}
+
+a:link {
+   color: var(--font-color);  
+}   
+
+a:visited {
+   color: var(--font-color);  
+}   
+
+a:hover {
+   color: yellow; 
+}  
+
+a:active {
+   color: purple;
+}   
+
+nav {
+   text-align: center;
+   margin-top: 14px;
+}
+
+nav a {
+   text-decoration: none;
+   text-transform: lowercase;
+   font-weight: bold;
+   font-size: larger;
+}
+
+
+
+
+
+.column {
+   flex: 1;
+   text-align: center;
+   border: 1px solid #ccc;
+   padding: 10px;
+}
+
+.column img {
+   display: block;
+   margin: 0 auto 10px;
+   width: 200px;
+   height: auto;
+}
+
+.column ul {
+   text-align: left;
+   display: inline-block;
+}
+
+.memories {
+   display: flex;
+   justify-content: space-around;
+   gap: 20px;
+   padding: 20px;
+
+}
+
+
+
+
+body {
+   font-family: Arial;
+}
+
+#container {
+   display: flex;
+   gap: 20px;
+   flex-direction: row-reverse;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.photo {
+   padding: 10px;
+   box-shadow: 3px 3px 3px lightgray;
+   border: 1px solid lightgray;   
+}
+
+.photo img {
+   width: 200px;
+   height: auto;
+}
+
+.photo p {
+   text-align: center;
+}
+
+
+    .yes-no-box {
+        border: 2px solid #333;
+        background-color: transparent;
+        padding: 15px 25px;
+        border-radius: 8px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        width: fit-content;
+        margin: 0 auto 20px; /* Center form and add space below */
+        margin-bottom: 75px;
+    }
+
+    .yes-no-box label {
+        margin: 0 8px;
+        font-size: 16px;
+    }
+
+    .yes-no-box .question {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    /* Bottom row container */
+    .bottom-row {
+        position: relative;
+        height: 50px; /* Enough height for images */
+    }
+
+    /* Left image */
+    .bottom-row .left-img {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: auto;
+    }
+
+    /* Center image */
+    .bottom-row .center-img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: auto;
+    }
+
+    /* Right image */
+    .bottom-row .right-img {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: auto;
+    }
+
+    /* Grey overlay */
+.rain-mode {
+    background-color: #5f5f5f;
+    transition: background-color 0.5s ease;
+}
+
+/* Rain container */
+.rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.raindrop {
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: rgba(255,255,255,0.7);
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
